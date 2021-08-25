@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #17223b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.contrasena-container {
+    background-color: #263859;
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.75);
+    min-width: 400px;
+    border-radius: 10px;
+}
+
+.contrasena-header {
+    padding: 1rem;
+}
+
+.contrasena {
+    background-color: #17223b;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    height: 70px;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.contrasena button {
+    background-color: #6b778d;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0.25rem;
+    font-family: inherit;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    width: 75px;
+    transform: translate(0, 20%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    opacity: 0;
+}
+
+.contrasena:hover button {
+    opacity: 1;
+    transform: translate(0, 20%);
+}
+
+.contrasena-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.generarContrasena {
+    display: block;
+    background-color: #6b778d;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}

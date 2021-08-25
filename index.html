@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/24a42d6608.js" crossorigin="anonymous"></script>
+    <title>Generador de contraseñas</title>
+</head>
+
+<body>
+    <div class="contrasena-container">
+        <div class="contrasena-header">
+            <div class="contrasena">
+                <span id="contrasena"></span>
+                <button id="copiar"><i class="far fa-clipboard"></i> Copiar</button>
+            </div>
+        </div>
+        <div class="contrasena-body">
+            <div class="form-control">
+                <label for="longitud">Longitud de Contraseña</label>
+                <input id="longitud" type="number" min="8" max="20">
+            </div>
+            <div class="form-control">
+                <label for="mayuscula">Contiene Mayúsculas</label>
+                <input id="mayuscula" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="minuscula">Contiene Minúsculas</label>
+                <input id="minuscula" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="numero">Contiene Números</label>
+                <input id="numero" type="checkbox">
+            </div>
+            <div class="form-control">
+                <label for="especial">Contiene caracteres especiales</label>
+                <input id="especial" type="checkbox">
+            </div>
+            <button class="generarContrasena" id="generarContrasena"><i class="fas fa-lock"></i> Generar Contraseña</button>
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
